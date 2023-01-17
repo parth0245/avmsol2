@@ -1,1 +1,139 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+
+@font-face {
+  font-family: "Rota-Regular";
+  src: url("./assets/fonts/Rota/Rota-Regular.otf");
+}
+
+@font-face {
+  font-family: "Rota-Medium";
+  src: url("./assets/fonts/Rota/Rota-Medium.otf");
+}
+
+@font-face {
+  font-family: "Rota-Bold";
+  src: url("./assets/fonts/Rota/Rota-Bold.otf");
+}
+
+@font-face {
+  font-family: "Rota-Black";
+  src: url("./assets/fonts/Rota/Rota-Black.otf");
+}
+
+.bg-green {
+  background-color: #6dd0a5;
+}
+
+.bg-blue {
+  background-color: #5448c8;
+}
+
+.border-hr {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.cl-green {
+  color: #6dd0a5;
+}
+.cl-orange {
+  color: #ffa500;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card {
+    padding: 15px 20px;
+    border-radius: 12px;
+    background-color: #ececec;
+    flex: 0 0 25%;
+    margin: 10px 10px;
+    .heading {
+      font-family: "Rota-Bold";
+      font-size: 24px;
+      color: #555555;
+    }
+    .card-body {
+      margin-top: 20px;
+      display: flex;
+      .round {
+        border-radius: 100px;
+        color: #ffffff;
+        font-family: "Rota-Bold";
+        font-size: 36px;
+        height: 90px;
+        width: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .sub-set {
+          font-size: 12px;
+          position: relative;
+          right: 0px;
+          bottom: -2px;
+          left: 5px;
+        }
+      }
+      .quality-index {
+        flex-grow: 1;
+        padding-left: 15px;
+        font-family: "Rota-Black";
+        font-size: 36px;
+        color: #999999;
+        .sub-set {
+          font-size: 12px;
+        }
+      }
+      .main-number {
+        color: #5448c8;
+        font-size: 64px;
+        font-family: "Rota-Bold";
+      }
+      .ref-number {
+        color: #5448c8;
+        font-size: 24px;
+        font-family: "Rota-Bold";
+        margin: 0px 10px 0px 0px;
+        align-self: center;
+      }
+      .context {
+        font-family: "Rota-Medium";
+        color: #fff;
+        padding: 5px 10px;
+
+        align-self: start;
+        border-radius: 5px;
+        margin: 0px 10px;
+
+      }
+      .total {
+        align-self: center;
+        .text {
+          font-family: "Rota-Regular";
+          font-size: 12px;
+          color: #999999;
+        }
+        .value {
+          font-family: "Rota-Bold";
+          font-size: 24px;
+          color: #555555;
+        }
+      }
+    }
+  }
+}
+
+// #5448C8 = dark blue
+
+// #6DD0A5 = green
+
+// #2D2D2D = kinf of black
+
+// #999999 = grey
